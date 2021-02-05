@@ -63,12 +63,12 @@
       if (!clip) {
         clip = new Howl({
         src: ['kirk.mp3'],
-        volume: 0.5
+        volume: 0.7
         });
       }
 
       clip.stop();
-      if (sound.unchecked) {
+      if (sound.checked) {
         clip.rate(1 / ((parseInt(slider.value) + 60) / 160));
         clip.play();
       }
